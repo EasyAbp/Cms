@@ -1,0 +1,48 @@
+@page
+@using Volo.Abp.AspNetCore.Mvc.UI.Layout
+@inherits EasyAbp.Cms.Web.Pages.CmsPage
+@model EasyAbp.Cms.Web.Pages.Cms.Articles.Article.IndexModel
+@inject IPageLayout PageLayout
+@{
+    PageLayout.Content.Title = L["Article"].Value;
+    PageLayout.Content.BreadCrumb.Add(L["Menu:Article"].Value);
+    PageLayout.Content.MenuItemName = "Article";
+}
+
+@section scripts
+{
+    <abp-script src="/Pages/Cms/Articles/Article/index.js" />
+}
+@section styles
+{
+    <abp-style src="/Pages/Cms/Articles/Article/index.css"/>
+}
+
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["Article"]</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+                <abp-button id="NewArticleButton"
+                            text="@L["CreateArticle"].Value"
+                            icon="plus"
+                            button-type="Primary" />
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="ArticleTable" class="nowrap">
+            <thead>
+            <tr>
+                <th>@L["Actions"]</th>
+                <th>@L["ArticleTenantId"]</th>
+                <th>@L["ArticleTitle"]</th>
+                <th>@L["ArticleContent"]</th>
+                <th>@L["ArticleReadCount"]</th>
+            </tr>
+            </thead>
+        </abp-table>
+    </abp-card-body>
+</abp-card>

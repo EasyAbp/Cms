@@ -1,0 +1,48 @@
+@page
+@using Volo.Abp.AspNetCore.Mvc.UI.Layout
+@inherits EasyAbp.Cms.Web.Pages.CmsPage
+@model EasyAbp.Cms.Web.Pages.Cms.Categories.Category.IndexModel
+@inject IPageLayout PageLayout
+@{
+    PageLayout.Content.Title = L["Category"].Value;
+    PageLayout.Content.BreadCrumb.Add(L["Menu:Category"].Value);
+    PageLayout.Content.MenuItemName = "Category";
+}
+
+@section scripts
+{
+    <abp-script src="/Pages/Cms/Categories/Category/index.js" />
+}
+@section styles
+{
+    <abp-style src="/Pages/Cms/Categories/Category/index.css"/>
+}
+
+<abp-card>
+    <abp-card-header>
+        <abp-row>
+            <abp-column size-md="_6">
+                <abp-card-title>@L["Category"]</abp-card-title>
+            </abp-column>
+            <abp-column size-md="_6" class="text-right">
+                <abp-button id="NewCategoryButton"
+                            text="@L["CreateCategory"].Value"
+                            icon="plus"
+                            button-type="Primary" />
+            </abp-column>
+        </abp-row>
+    </abp-card-header>
+    <abp-card-body>
+        <abp-table striped-rows="true" id="CategoryTable" class="nowrap">
+            <thead>
+            <tr>
+                <th>@L["Actions"]</th>
+                <th>@L["CategoryTenantId"]</th>
+                <th>@L["CategoryName"]</th>
+                <th>@L["CategoryShortName"]</th>
+                <th>@L["CategoryDescription"]</th>
+            </tr>
+            </thead>
+        </abp-table>
+    </abp-card-body>
+</abp-card>

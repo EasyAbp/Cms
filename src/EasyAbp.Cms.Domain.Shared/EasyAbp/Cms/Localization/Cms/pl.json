@@ -1,0 +1,24 @@
+{
+  "culture": "pl",
+  "texts": {
+    "Menu:Category": "MenuCategory",
+    "Category": "Category",
+    "CategoryTenantId": "CategoryTenantId",
+    "CategoryName": "CategoryName",
+    "CategoryShortName": "CategoryShortName",
+    "CategoryDescription": "CategoryDescription",
+    "CreateCategory": "CreateCategory",
+    "EditCategory": "EditCategory",
+    "CategoryDeletionConfirmationMessage": "Are you sure to delete the category {0}?",
+    "SuccessfullyDeleted": "Successfully deleted",
+    "Menu:Article": "MenuArticle",
+    "Article": "Article",
+    "ArticleTenantId": "ArticleTenantId",
+    "ArticleTitle": "ArticleTitle",
+    "ArticleContent": "ArticleContent",
+    "ArticleReadCount": "ArticleReadCount",
+    "CreateArticle": "CreateArticle",
+    "EditArticle": "EditArticle",
+    "ArticleDeletionConfirmationMessage": "Are you sure to delete the article {0}?"
+  }
+}

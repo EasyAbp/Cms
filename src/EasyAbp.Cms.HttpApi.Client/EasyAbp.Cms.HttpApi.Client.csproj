@@ -4,7 +4,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>EasyAbp.Cms</RootNamespace>
+    <RootNamespace />
   </PropertyGroup>
 
   <ItemGroup>

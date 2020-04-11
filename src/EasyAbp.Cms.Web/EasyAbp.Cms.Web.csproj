@@ -39,4 +39,13 @@
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Pages\Categories\Category\CreateModal.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Categories\Category\EditModal.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Categories\Category\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Articles\Article\CreateModal.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Articles\Article\EditModal.cshtml" />
+    <_ContentIncludedByDefault Remove="Pages\Articles\Article\Index.cshtml" />
+  </ItemGroup>
+
 </Project>

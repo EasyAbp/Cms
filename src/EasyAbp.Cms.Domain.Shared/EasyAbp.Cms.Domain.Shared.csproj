@@ -4,7 +4,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>EasyAbp.Cms</RootNamespace>
+    <RootNamespace />
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,8 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Localization\Cms\*.json" />
-    <Content Remove="Localization\Cms\*.json" />
+    <EmbeddedResource Include="EasyAbp\Cms\Localization\Cms\*.json" />
+    <Content Remove="EasyAbp\Cms\Localization\Cms\*.json" />
   </ItemGroup>
 
 </Project>
