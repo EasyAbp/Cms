@@ -10,7 +10,7 @@
     <RepositoryUrl>https://github.com/EasyAbp/Cms</RepositoryUrl>
     <PackageTags>abp module easyabp CMS content</PackageTags>
     <Company>EasyAbp</Company>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
